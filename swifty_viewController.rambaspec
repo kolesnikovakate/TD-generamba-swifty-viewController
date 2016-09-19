@@ -1,0 +1,24 @@
+# Template information section
+name: "swifty_viewController"
+summary: "Swift TD VIPE module template with UIViewController playing as a View."
+author: "Kolesnikova Kate"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# View layer
+- {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
+- {name: View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+- {name: View/RouterInput.swift, path: Code/View/router_input.swift.liquid}
+
+# Interactor layer
+- {name: Interactor/ModuleInput.swift, path: Code/Interactor/module_input.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# Configurator
+- {name: Configurator/Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
+- {name: Configurator/Initializer.swift, path: Code/Configurator/initializer.swift.liquid}
+
