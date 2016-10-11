@@ -16,7 +16,6 @@ code_files:
 - {name: View/ViewController.storyboard, path: Code/View/viewcontroller.storyboard.liquid}
 
 # Interactor layer
-- {name: Interactor/ModuleInput.swift, path: Code/Interactor/module_input.swift.liquid}
 - {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
 
 # Configurator
