@@ -8,7 +8,7 @@
 
 import UIKit
 
-class {{ module_info.name }}ViewController: CommonViewController, {{module_info.name}}ViewInput, {{ module_info.name }}RouterInput {
+class {{ module_info.name }}ViewController: CommonViewController {
 
     var output: {{ module_info.name }}ViewOutput!
 
@@ -17,11 +17,16 @@ class {{ module_info.name }}ViewController: CommonViewController, {{module_info.
         super.viewDidLoad()
         output.viewIsReady()
     }
+}
 
-
-    // MARK: {{module_info.name}}ViewInput
+// MARK: {{module_info.name}}ViewInput
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
     func setupInitialState() {
-    }
 
-    // MARK: {{module_info.name}}RouterInput
+    }
+}
+
+// MARK: {{ module_info.name }}RouterInput
+extension {{ module_info.name }}ViewController: {{ module_info.name }}RouterInput {
+
 }

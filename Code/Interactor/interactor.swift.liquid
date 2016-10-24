@@ -6,13 +6,15 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-class {{ module_info.name }}Interactor: {{ module_info.name }}ViewOutput {
+class {{ module_info.name }}Interactor {
 
     weak var view: protocol<{{ module_info.name }}ViewInput, {{ module_info.name }}RouterInput>?
+    
+}
 
-	// MARK: {{module_info.name}}ViewOutput
+// MARK: {{ module_info.name }}ViewOutput
+extension {{ module_info.name }}Interactor: {{ module_info.name }}ViewOutput {
     func viewIsReady() {
 
     }
-
 }
